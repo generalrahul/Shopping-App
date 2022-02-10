@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 const userRoute = require(__dirname + '/routes/user')
 const authRoute = require(__dirname + "/routes/auth")
+const productRoute = require(__dirname + "/routes/product")
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.get("/api/test", () => {
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
+app.use("/api/product", productRoute);
 
 
 app.listen(process.env.PORT || 3000, function(req, res){
