@@ -4,11 +4,12 @@
   "description": "My Shopping Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "author": "Rahul Jha",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "crypto-js": "^4.1.1",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
